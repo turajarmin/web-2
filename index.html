@@ -7,6 +7,31 @@
   <link rel="stylesheet" href="./src/css/main.css">
 </head>
 <body>
-    
+      <!-- #region wrapper-->
+       <div class="wrapper">
+        <!-- #region menu-->
+         <div class="menu">
+          <nav class="menu-nav">
+            <div class="menu-nav-item"><a href="#" class="menu-nav-item-link">home</a></div> 
+            <div class="menu-nav-item"><a href="#" class="menu-nav-item-link">about</a></div> 
+            <div class="menu-nav-item"><a href="#" class="menu-nav-item-link">contact</a></div> 
+            <div class="menu-nav-item"><a href="#" class="menu-nav-item-link">gallery</a></div> 
+          </nav>
+         </div>
+         <div class="hamburger">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+         </div>
+         <!-- #endregion -->
+       </div>
+       <!-- #endregion -->
+        <script>
+            let hamburger=document.querySelector(".hamburger")
+            let menu=document.querySelector(".menu")
+            hamburger.addEventListener("click",function(){
+              menu.classList.toggle("active")
+            })
+        </script>
 </body>
 </html>
